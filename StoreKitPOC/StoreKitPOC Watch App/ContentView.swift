@@ -6,15 +6,27 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Button(action: {}){
-                Text("Teste")
+        ScrollView {
+//            Button(action: {}){
+//                Text("Teste")
+//            }
+//            StoreView(ids: [Product.coin1, Product.coin2])
+            
+            ForEach(Product.allCases) {
+                product in
+                if product.rawValue.contains("coin") {
+                    ProductView(id: product.rawValue) {
+                        Image(systemName: "star.fill")
+                    }
+                    
+                }
             }
         }
-        .padding()
+//        .padding()
     }
 }
 

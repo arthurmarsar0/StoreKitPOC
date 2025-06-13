@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F89D6052DFB5B0D00D58E2E /* StoreKitPOC Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3F89D6042DFB5B0D00D58E2E /* StoreKitPOC Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F89D6362DFB66A200D58E2E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F89D6352DFB66A200D58E2E /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F89D6042DFB5B0D00D58E2E /* StoreKitPOC Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoreKitPOC Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F89D6132DFB5B0F00D58E2E /* StoreKitPOC Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreKitPOC Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F89D61D2DFB5B0F00D58E2E /* StoreKitPOC Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StoreKitPOC Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F89D6352DFB66A200D58E2E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F89D6362DFB66A200D58E2E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +107,7 @@
 				3F89D6082DFB5B0D00D58E2E /* StoreKitPOC Watch App */,
 				3F89D6162DFB5B0F00D58E2E /* StoreKitPOC Watch AppTests */,
 				3F89D6202DFB5B0F00D58E2E /* StoreKitPOC Watch AppUITests */,
+				3F89D6342DFB66A200D58E2E /* Frameworks */,
 				3F89D5FF2DFB5B0D00D58E2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +121,14 @@
 				3F89D61D2DFB5B0F00D58E2E /* StoreKitPOC Watch AppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3F89D6342DFB66A200D58E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F89D6352DFB66A200D58E2E /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
